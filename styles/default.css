@@ -1,0 +1,202 @@
+
+/*General*/
+body{
+    /* background-color: rgb(46, 49, 77); */
+    background-image: url('/images/netherite_block.png');
+    background-repeat: repeat;
+    background-size: 32px 32px;
+}
+/*Header*/
+.header_ul {
+    background-color: rgba(71, 74, 94, 0.438);
+    margin: 0% 2%;
+    padding: 0px 0px;
+    border-radius: 4px;
+    height: 48px;
+    display: flex;
+    align-content: center;
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    font-family: InterBold;
+}
+.logo{
+   float: left;
+   width: 48px;
+   height: 48px;
+   padding: 0px 0px;
+}
+.logo > img{
+    width: 48px;
+    height: 48px;
+    padding: 5px 10px;
+ }
+.header_ul > .starter_content {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: first baseline;
+    justify-content: first baseline;
+    padding: 13px;
+    position: relative;
+    font-family: InterBold;
+}
+.header_ul > .extra_content {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: right;
+    justify-content: right;
+    padding: 0px 10px;
+    position: relative;
+    left: 0%;
+    font-family: InterBold;
+}
+.header_ul > .starter_content > .category{
+    min-width: auto;
+    padding-left: 10px;
+    min-height: 50px;
+    marker: none;
+    color: rgb(205, 205, 205);
+}
+.header_ul > .extra_content > .category{
+    min-width: 48px;
+    padding-left: 0px;
+    min-height: 48px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    marker: none;
+    color: rgb(205, 205, 205);
+}
+.header_ul > .extra_content > .category > img{
+    width: 48px;
+    height: 48px;
+    border-radius: 10%;
+    mix-blend-mode: color-dodge;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.body {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: InterBold;
+    color: rgb(205, 205, 205);
+}
+.body .header_text{
+    color: orange;
+    font-size: 50px;
+    max-height: 10px;
+}
+.body .body_text{
+    color: rgb(205, 205, 205);
+}
+
+/*Contents*/
+.body .newer_contents{
+    align-items: center;
+    justify-content: center;
+}
+.newer_contents .content{
+    background-color: rgba(71, 74, 94, 0.5);
+    border-radius: 10px;
+    padding: 7px 0px;
+    min-width: 1070px;
+    min-height: 128px;
+    max-width: 1070px;
+    height: fit-content;
+    display: flex;
+    margin: 6px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.newer_contents .content .title{
+    padding-top: -10px;
+    width: 90%;
+    border-bottom: 2px solid;
+    text-align: center;
+}
+.newer_contents .content > ul{
+    padding: 0px 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 10px;
+    padding-top: 6px;
+    margin: 0px 0px;
+    min-height: 128px;
+    max-height: fit-content;
+    max-width: 1070px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content_button{
+    background-color: rgba(50, 52, 67, 0.5);
+    min-width: 256px;
+    min-height: 128px;
+    max-width: 256px;
+    max-height: 128px;
+    margin: 4px 4px;
+    padding: auto auto;
+    border: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(42, 42, 42);
+    cursor: pointer;
+    font-family: InterBold;
+    color: rgb(205, 205, 205);
+}
+.content_button:hover{
+    border-color: rgb(233, 233, 233);
+}
+.content_button .content_icon{
+    width: 48px;
+    height: 48px;
+    position: relative;
+    left: 0px;
+    bottom: 6px;
+    padding: 3px 3px;
+    background-color: rgba(71, 74, 94, 0.5);
+    border-radius: 10px;
+    image-rendering: optimizeQuality;
+}
+.content_button .content_title{
+    width: 180px;
+    height: 48px;
+    font-size: 18px;
+    padding: 0px 0px;
+    bottom: 6px;
+    position: relative;
+    padding: 0px 0px;
+    margin: auto auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.content_button .content_desc{
+    width: 256px;
+    clip-path: margin-box;
+    height: 48px;
+    padding: 0px 0px;
+    display: flex;
+    margin: auto auto;
+    font-size: 13px;
+    text-align: left;
+}

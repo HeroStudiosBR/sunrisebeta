@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Teste</title>
+  </head>
+  <link href="styles/default.css" rel="stylesheet" />
+  <link href="styles/fonts.css" rel="stylesheet" />
+  <header>
+    <div>
+      <ul class="header_ul">
+        <a href="index.html" class="logo"><img src="images/web_logo.webp" /></a>
+        <div class="starter_content">
+          <a href="addons.html" class="category">Add-Ons</a>
+          <a href="youtube" class="category">Resource Packs</a>
+          <a href="youtube" class="category">Games</a>
+        </div>
+        <div class="extra_content">
+            <a href="https://github.com/pedrodenovo" class="category"><img src="https://api.sunrise-studio.site/assets/icon_git.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCrq1E1rJEaYDXeU1qXk9OaQ?app=desktop" class="category"><img src="https://api.sunrise-studio.site/assets/icon_yt.png" alt=""></a>
+            <a href="https://twitter.com/sunrise_studioo" class="category"><img src="https://api.sunrise-studio.site/assets/icon_x.png" alt=""></a>
+            <a href="https://discord.com/invite/HAS99pEwJ4" class="category"><img src="https://api.sunrise-studio.site/assets/icon_discord.webp" alt=""></a>
+        </div>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="body">
+      <h1 class="header_text">Sunrise Studio</h1>
+      <h2 class="body_text">Welcome to Sunrise Studio</h2>
+      <div class="newer_contents">
+        <div class="content" id="addons-newer">
+            <a class="title">Add-Ons (Recentes)</a>
+            <ul class="list">
+            </ul>
+        </div>
+        <div class="content" id="textures-newer">
+            <a class="title">Texturas (Recentes)</a>
+            <ul class="list">
+            </ul>
+        </div>
+        <div class="content" id="games-newer">
+            <a class="title">Jogos (Recentes)</a>
+            <ul class="list">
+            </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore-compat.js"></script>
+    <script src="src/SunriseApi/index.js"></script>
+    <script src="src/SunriseApi/firebase.js"></script>
+  </body>
+</html>
