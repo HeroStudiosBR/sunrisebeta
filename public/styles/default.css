@@ -6,7 +6,7 @@
 /*General*/
 body{
     /* background-color: rgb(46, 49, 77); */
-    background-image: url('/public/images/netherite_block.png');
+    background-image: url('images/netherite_block.png');
     background-repeat: repeat;
     background-size: 32px 32px;
 }
