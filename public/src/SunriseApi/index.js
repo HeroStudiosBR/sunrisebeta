@@ -38,27 +38,27 @@ var Posts = {
 //Functions
 function GeneratePosts(postId, categoryName){
     let PostCategory = document.getElementById(postId).getElementsByClassName("list")[0]
-    firebase.firestore().collection("posts").get().then(result =>{
+    firebase.firestore().collection("Posts").get().then(result =>{
         result.docs.forEach(doc=>{
-           let postData = doc.data
+           let postData = doc.data()
            console.log(postData)
-        //    if(postData.category == categoryName){
-        //     let postButton = document.createElement("button")
-        //     let title = document.createElement("p")
-        //     let desc = document.createElement("p")
-        //     let icon = document.createElement("img")
-        //     title.className = "content_title"
-        //     desc.className = "content_desc"
-        //     icon.className = "content_icon"
-        //     postButton.className = "content_button"
-        //     icon.src = postData.icon
-        //     title.textContent = postData.title
-        //     desc.textContent = postData.description_resume
-        //     postButton.appendChild(icon)
-        //     postButton.appendChild(title)
-        //     postButton.appendChild(desc)
-        //     PostCategory.appendChild(postButton)
-        //    }
+           if(postData.category == categoryName){
+            let postButton = document.createElement("button")
+            let title = document.createElement("p")
+            let desc = document.createElement("p")
+            let icon = document.createElement("img")
+            title.className = "content_title"
+            desc.className = "content_desc"
+            icon.className = "content_icon"
+            postButton.className = "content_button"
+            icon.src = postData.icon
+            title.textContent = postData.title
+            desc.textContent = postData.description_resume
+            postButton.appendChild(icon)
+            postButton.appendChild(title)
+            postButton.appendChild(desc)
+            PostCategory.appendChild(postButton)
+           }
         })
     })
 }
