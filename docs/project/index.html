@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Teste</title>
+  </head>
+  <link href="../src/styles/default.css" rel="stylesheet" />
+  <link href="../src/styles/project_post.css" rel="stylesheet" />
+  <link href="../src/styles/create_project.css" rel="stylesheet" />
+  <header>
+    <div>
+      <ul class="header_ul">
+        <a href="../" class="logo"><img src="/docs/src/images/web_logo.webp" /></a>
+        <div class="starter_content">
+          <a href="../addons" class="category">Add-Ons</a>
+          <a href="../textures" class="category">Resource Packs</a>
+          <a href="../games" class="category">Games</a>
+          <a href="../create_project" class="category">Create Post</a>
+        </div>
+        <div class="extra_content">
+            <a href="https://github.com/pedrodenovo" class="category"><img src="https://api.sunrise-studio.site/assets/icon_git.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCrq1E1rJEaYDXeU1qXk9OaQ?app=desktop" class="category"><img src="https://api.sunrise-studio.site/assets/icon_yt.png" alt=""></a>
+            <a href="https://twitter.com/sunrise_studioo" class="category"><img src="https://api.sunrise-studio.site/assets/icon_x.png" alt=""></a>
+            <a href="https://discord.com/invite/HAS99pEwJ4" class="category"><img src="https://api.sunrise-studio.site/assets/icon_discord.webp" alt=""></a>
+        </div>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="body">
+      <br>
+      <br>
+      <ul id="screen">
+        <div class="box_panel" style="width: 256px; height: 300px; max-width: 700px; max-height: 500px; margin: 0px 10px;">
+          <img src="../src/images/pack_icon.png" style="width: 80px; height: 80px; position: absolute; left: 20px; top: 20px;" id="icon-image"></img>
+          <div style="width: 100%; height: 90%; position: absolute; right: 0px; top: 90px; display: flex; flex-wrap: wrap; flex-direction: column;">
+            <!-- <p style="width: 90%; height: 18px; text-align: left; color: rgb(172, 172, 172)" id="category">Addons</p>
+            <h2 id="title" style="width: 90%; height: auto; text-align: center; word-break: break-all;">Titulo</h2>
+            <p style="width: 90%; height: auto; text-align: left; color: rgb(172, 172, 172)" id="summary">Titulo Projeto falico muito doido slk</p> -->
+            <p style="height: auto; position:relative;color: rgb(172, 172, 172); padding: 0px 10px;" id="category">Addons</p>
+            <h3 id="title" style="width: 90%; height: auto; text-align: center; word-break: break-all; position: relative; bottom: 30px; left:10px;">Titulo</h3>
+            <p style="height: auto; color: rgb(172, 172, 172); padding: 0px 10px; position: relative; bottom: 50px;" id="summary">Descriçao Resumida\nTeste\nTeste</p>
+            <button class="button" id="download-project-button" style="position: relative; left: 10px; bottom: 30px;">Download File</button>
+          </div>
+          <div class="box_panel" style="width: 256px; height: 180px; max-width: 700px; max-height: 500px; position:absolute; top: 320px;"></div>
+       
+        </div>
+        <div class="box_panel" style="width: 700px; height: 500px; max-width: 700px; max-height: 500px;">
+          <ul style="height: 90%; width: 90%; max-width: 90%; max-height: 90%;" id="preview-description-text" class="text_panel"></ul>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-storage-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+    <script src="/docs/src/js/SunriseApi/firebase.js"></script>
+    <script src="/docs/src/js/SunriseApi/postProject.js"></script>
+    <script src="/docs/src/js/SunriseApi/utils.js"></script>
+    <script src="/docs/src/js/SunriseApi/database.js"></script>
+  </body>
+</html>

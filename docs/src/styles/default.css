@@ -1,10 +1,10 @@
 /*Fonts*/
 @font-face {
     font-family: InterBold;
-    src: url("../custom_fonts/Inter/InterBold.ttf");
+    src: url("../fonts/Inter/InterBold.ttf");
 }
 /*General*/
-body{
+.bg{
     /* background-color: rgb(46, 49, 77); */
     background-image: url('../images/netherite_block.png');
     background-repeat: repeat;
@@ -60,7 +60,7 @@ body{
 .header_ul > .starter_content > .category{
     min-width: auto;
     padding-left: 10px;
-    min-height: 50px;
+    height: auto;
     marker: none;
     color: rgb(205, 205, 205);
 }

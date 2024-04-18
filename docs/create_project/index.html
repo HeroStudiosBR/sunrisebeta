@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Teste</title>
+  </head>
+  <link href="../src/styles/default.css" rel="stylesheet" />
+  <link href="../src/styles/create_project.css" rel="stylesheet" />
+  <header>
+    <div>
+      <ul class="header_ul">
+        <a href="../" class="logo"><img src="/docs/src/images/web_logo.webp" /></a>
+        <div class="starter_content">
+          <a href="../addons" class="category">Add-Ons</a>
+          <a href="../textures" class="category">Resource Packs</a>
+          <a href="../games" class="category">Games</a>
+          <a href="../create_project" class="category">Create Post</a>
+        </div>
+        <div class="extra_content">
+            <a href="https://github.com/pedrodenovo" class="category"><img src="https://api.sunrise-studio.site/assets/icon_git.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCrq1E1rJEaYDXeU1qXk9OaQ?app=desktop" class="category"><img src="https://api.sunrise-studio.site/assets/icon_yt.png" alt=""></a>
+            <a href="https://twitter.com/sunrise_studioo" class="category"><img src="https://api.sunrise-studio.site/assets/icon_x.png" alt=""></a>
+            <a href="https://discord.com/invite/HAS99pEwJ4" class="category"><img src="https://api.sunrise-studio.site/assets/icon_discord.webp" alt=""></a>
+        </div>
+      </ul>
+    </div>
+  </header>
+  <body class="bg"></body>
+  <body>
+    <div class="body" id="page-post_creator">
+      <h1 class="header_text">Create Post</h1>
+      <h2 class="body_text">Welcome Sunrise Content Creator</h2>
+      <div class="box_panel" style="width: 700px; height: 500px; max-width: 700px; max-height: 500px;">
+        <p class="title">New Post</p>
+        <form>
+          <label>Project Title:</label>
+          <input type="text" style="height: 24px; width: 256px;" class="text_panel" id="create-title-text"/>
+          <label>Page Name:</label>
+          <input type="text" style="height: 24px; width: 256px;" class="text_panel" id="create-title-text" placeholder="https://www.herostudiosbr.github.io/sunrisebeta/"/>
+          <label>Project Summary:</label>
+          <textarea style="height: 64px; width: 256px; max-width: 256px; max-height: 64px;" class="text_panel" id="create-summary-text" rows="4"></textarea>
+          <div id="project-icon-uploader">
+            <label>Project Icon:</label><br>
+            <div id="icon-upload-image"><img src="/docs/src/images/pack_icon.png" id="icon-image"></img><input type="file" accept=".jpg, .png" id="icon-upload-button" ></div>
+          </div>
+          <label>Project File:</label>
+          <input type="file" accept=".mcaddon, .mcpack, .zip" id="file-upload-button">
+          <div>
+            <label>Project Description:</label><br>
+            <input type="checkbox" value="Teste" id="desc-preview-checkbox"/>
+            <label for="desc-preview-checkbox">Preview Description</label><br>
+            <ul style="height: 256px; width: 384px; max-width: 384px; max-height: 256px; display: none;" id="preview-description-text"></ul>
+            <textarea style="height: 259px; width: 398px; max-width: 398px; max-height: 259px;" class="text_panel" id="create-description-text" placeholder="Write Something..."></textarea>
+          </div>
+        </form>
+        <button class="button" id="upload-project-button" style="position: relative; right: 1%; bottom: 28%;">Upload Project</button>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-storage-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+    <script src="/docs/src/js/SunriseApi/firebase.js"></script>
+    <script src="/docs/src/js/SunriseApi/createProject.js"></script>
+    <script src="/docs/src/js/SunriseApi/utils.js"></script>
+    <script src="/docs/src/js/SunriseApi/database.js"></script>
+  </body>
+</html>

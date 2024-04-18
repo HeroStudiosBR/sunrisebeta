@@ -1,0 +1,6 @@
+#screen{
+    display: flex;
+}
+#title {
+    border-bottom: 2px solid;
+}

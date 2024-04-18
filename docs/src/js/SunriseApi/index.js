@@ -41,7 +41,6 @@ function GeneratePosts(postId, categoryName){
     firebase.firestore().collection("Posts").get().then(result =>{
         result.docs.forEach(doc=>{
            let postData = doc.data()
-           console.log(postData)
            if(postData.category == categoryName){
             let postButton = document.createElement("button")
             let title = document.createElement("p")
@@ -53,11 +52,14 @@ function GeneratePosts(postId, categoryName){
             postButton.className = "content_button"
             icon.src = postData.icon
             title.textContent = postData.title
-            desc.textContent = postData.description_resume
+            desc.textContent = postData.summary
             postButton.appendChild(icon)
             postButton.appendChild(title)
             postButton.appendChild(desc)
             PostCategory.appendChild(postButton)
+            postButton.addEventListener("click", function(){
+              location.href = "project#"+postData.id
+            })
            }
         })
     })

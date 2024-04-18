@@ -4,17 +4,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Teste</title>
   </head>
-  <link href="styles/default.css" rel="stylesheet" />
-  <link href="styles/create_project.css" rel="stylesheet" />
+  <link href="../src/styles/default.css" rel="stylesheet" />
+  <link href="../src/styles/create_project.css" rel="stylesheet" />
   <header>
     <div>
       <ul class="header_ul">
-        <a href="/sunrisebeta/" class="logo"><img src="images/web_logo.webp" /></a>
+        <a href="../" class="logo"><img src="/docs/src/images/web_logo.webp" /></a>
         <div class="starter_content">
-          <a href="addons.html" class="category">Add-Ons</a>
-          <a href="youtube" class="category">Resource Packs</a>
-          <a href="youtube" class="category">Games</a>
-          <a href="create_project.html" class="category">Create Post</a>
+          <a href="../addons" class="category">Add-Ons</a>
+          <a href="../textures" class="category">Resource Packs</a>
+          <a href="../games" class="category">Games</a>
+          <a href="../create_project" class="category">Create Post</a>
         </div>
         <div class="extra_content">
             <a href="https://github.com/pedrodenovo" class="category"><img src="https://api.sunrise-studio.site/assets/icon_git.png" alt=""></a>
@@ -26,17 +26,21 @@
     </div>
   </header>
   <body>
-    <div class="body">
-      <h1 class="header_text">Create Post</h1>
-      <h2 class="body_text">Welcome Sunrise Creator Content</h2>
-      <div class="box_panel" style="width: 1024px; height: 1024px;">
+    <div class="body" id="page-post_creator">
+      <h1 class="header_text">Resource Packs</h1>
+      <h2 class="body_text">Welcome Resource Packs Tab</h2>
+      <div class="box_panel" style="width: 700px; height: 500px; max-width: 700px; max-height: 500px;">
+        <!-- <p class="title">New Post</p> -->
       </div>
     </div>
     <!-- Scripts -->
     <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore-compat.js"></script>
-    <script src="src/SunriseApi/firebase.js"></script>
-    <script src="src/SunriseApi/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+    <script src="/docs/src/js/SunriseApi/firebase.js"></script>
+    <!-- <script src="/docs/src/js/SunriseApi/createProject.js"></script> -->
+    <script src="/docs/src/js/SunriseApi/utils.js"></script>
+    <script src="/docs/src/js/SunriseApi/database.js"></script>
   </body>
 </html>
